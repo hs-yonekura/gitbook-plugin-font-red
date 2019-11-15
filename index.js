@@ -5,7 +5,7 @@ module.exports = {
   hooks: {
     page: function (page) {
       let $ = cheerio.load(page.content);
-      $(*).each(function (index, a) {
+      $("*").each(function (index, a) {
         var a = $(a);
         var text = a.text();
         if (re.test(text)) {
