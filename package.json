@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-font-red",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a plugin for gitbook to make some fonts red.",
   "main": "index.js",
   "scripts": {
