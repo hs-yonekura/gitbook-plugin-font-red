@@ -7,7 +7,7 @@ module.exports = {
         end:     '@'
       },
       process(content) {
-        return '<font color="red">' + content.body + '</font>';
+        return '<span style="color:red">' + content.body + '</span>';
       }
     }
   }
