@@ -1,5 +1,5 @@
-var cheerio = require('cheerio');
-var re = /(^@|\s@).*?(@$|@\s)/g;
+const cheerio = require('cheerio');
+const re = /(^@|\s@)(.*?)(@$|@\s)/g;
 
 function replacer($, text) {
   if ($(text).children().length) {
@@ -24,7 +24,7 @@ function f(body) {
 
 module.exports = {
   hooks: {
-    page: function (page) {
+    'page': function(page) {
       page.content = f(page.content).replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
       return page;
     }
