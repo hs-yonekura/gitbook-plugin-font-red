@@ -3,8 +3,8 @@ module.exports = {
     fontred: {
       shortcuts: {
         parsers: ['markdown', 'asciidoc', 'restructuredtext'],
-        start:   '[red]',
-        end:     '[/red]'
+        start:   '@',
+        end:     '@'
       },
       process(content) {
         return '<span style="color:red">' + content.body + '</span>';
